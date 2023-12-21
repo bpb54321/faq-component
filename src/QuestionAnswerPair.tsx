@@ -33,7 +33,13 @@ const QuestionAnswerPair = ({question, answer, isInitiallyExpanded}: IQuestionAn
             <dd className={clsx({
                 [css.answer]: true,
                 [css.expanded]: isExpanded,
-            })}>{answer}</dd>
+            })}>
+                <span
+                    className={clsx({
+                        [css.answerInner]: true,
+                    })}
+                >{answer}</span>
+            </dd>
         </div>
     );
 }

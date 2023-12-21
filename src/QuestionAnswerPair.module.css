@@ -8,11 +8,17 @@
     overflow: hidden;
     margin: 0;
     padding-inline-start: 1em;
-    height: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s;
+}
+
+.answerInner {
+    overflow: hidden;
 }
 
 .expanded {
-    height: auto;
+    grid-template-rows: 1fr;
 }
 
 .triangle {
